@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합 폼 예제</title>
+</head>
+<body>
+    <!-- 첫 번째 폼: 아이디와 비밀번호 입력 -->
+    <h2>아이디와 비밀번호 입력</h2>
+    <form action="/submit" method="post">
+        <label for="username1">아이디:</label>
+        <input type="text" id="username1" name="username" required>
+        <br><br>
+
+        <label for="password1">비밀번호:</label>
+        <input type="password" id="password1" name="password" required>
+        <br><br>
+
+        <input type="reset" value="초기화">
+        <input type="submit" value="제출">
+    </form>
+    
+    <hr>
+
+    <!-- 두 번째 폼: 색상 선택 -->
+    <h2>색상 선택</h2>
+    <form>
+        <label for="colorPicker">색상 선택:</label>
+        <input type="color" id="colorPicker" name="colorPicker">
+    </form>
+    
+    <hr>
+
+    <!-- 세 번째 폼: 아이디, 비밀번호, 취미 선택 -->
+    <h2>사용자 정보 입력 및 취미 선택</h2>
+    <form action="/submit" method="post">
+        <label for="username2">아이디:</label>
+        <input type="text" id="username2" name="username" required>
+        <br><br>
+
+        <label for="password2">비밀번호:</label>
+        <input type="password" id="password2" name="password" required>
+        <br><br>
+
+        <h4>취미</h4>
+        <label for="hobby1">스포츠</label>
+        <input type="checkbox" id="hobby1" name="hobby" value="sports">
+        <label for="hobby2">게임</label>
+        <input type="checkbox" id="hobby2" name="hobby" value="gaming">
+        <label for="hobby3">요리</label>
+        <input type="checkbox" id="hobby3" name="hobby" value="cooking">
+        <br><br>
+
+        <input type="submit" value="제출">
+    </form>
+    
+    <hr>
+
+    <!-- 네 번째 폼: 직업 선택 (라디오 버튼) -->
+    <h2>직업 선택</h2>
+    <form>
+        <label for="job1">UI/UX 디자이너</label>
+        <input type="radio" id="job1" name="job" value="design">
+        <br><br>
+        
+        <label for="job2">프런트엔드 개발자</label>
+        <input type="radio" id="job2" name="job" value="front-end dev">
+        <br><br>
+        
+        <label for="job3">백엔드 개발자</label>
+        <input type="radio" id="job3" name="job" value="back-end dev">
+    </form>
+    
+    <hr>
+
+    <!-- 다섯 번째 폼: 전송 및 초기화 버튼 -->
+    <h2>전송 및 초기화 버튼</h2>
+    <form action="/submit" method="post">
+        <label for="username3">아이디:</label>
+        <input type="text" id="username3" name="username" required>
+        <br><br>
+
+        <label for="password3">비밀번호:</label>
+        <input type="password" id="password3" name="password" required>
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+    
+    <hr>
+
+    <!-- 여섯 번째 폼: 기본 폼 요소 -->
+    <h2>기본 폼 요소</h2>
+    <form action="/submit" method="post">
+        <label for="username4">아이디:</label>
+        <input type="text" id="username4" name="username" required>
+        <br><br>
+
+        <label for="password4">비밀번호:</label>
+        <input type="password" id="password4" name="password" required>
+        <br><br>
+
+        <input type="reset" value="초기화">
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
